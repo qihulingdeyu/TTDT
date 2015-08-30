@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#60000000">
+
+    <ProgressBar
+        android:id="@+id/playProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:secondaryProgress="40"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/play_progressbar_color" />
+    
+    <ImageButton
+        android:id="@+id/bottom_singer_icon"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/playProgressBar"
+        android:background="@drawable/appwidget_icon_album_cover_normal" />
+
+    <TextView android:id="@+id/bottom_singer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bottom_singer_icon"
+        android:layout_below="@+id/playProgressBar"
+        android:layout_marginLeft="10dp"
+        android:maxWidth="150dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:text="陈奕迅"/>
+    <TextView android:id="@+id/bottom_music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_singer_name"
+        android:layout_alignLeft="@+id/bottom_singer_name"
+        android:layout_marginTop="-3dp"
+        android:maxWidth="150dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:text="十年"/>
+    <TextView android:id="@+id/bottom_music_playtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_music_name"
+        android:layout_alignLeft="@+id/bottom_singer_name"
+        android:layout_alignBottom="@+id/bottom_singer_icon"
+        android:layout_marginTop="-3dp"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:text="01:33"/>
+    <TextView android:id="@+id/bottom_music_duartion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_music_name"
+        android:layout_toRightOf="@+id/bottom_music_playtime"
+        android:layout_alignTop="@+id/bottom_music_playtime"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:text="-04:30"/>
+
+    <CheckBox
+        android:id="@+id/bottom_music_play_pause_btn"
+        android:layout_width="41dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/bottom_music_nextsong_btn"
+        android:background="@drawable/btn_pressed_bg_selector"
+        android:button="@drawable/musiclist_music_play_pause_selector" />
+
+    <ImageButton android:id="@+id/bottom_music_nextsong_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_toLeftOf="@+id/bottom_music_menu_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn_pressed_bg_selector"
+        android:src="@drawable/icon_next_normal"/>
+
+    <ImageButton
+        android:id="@+id/bottom_music_menu_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/btn_pressed_bg_selector"
+        android:src="@drawable/icon_menu_point" />
+
+    
+</RelativeLayout>

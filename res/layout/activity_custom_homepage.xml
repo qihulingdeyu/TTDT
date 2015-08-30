@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout style="@style/title_layout"
+        android:background="@drawable/titlebar_background">
+        <ImageButton android:id="@+id/alter_hp2homepage"
+            style="@style/title_layout_imgbtn"/>
+        <TextView style="@style/title_layout_txtview"
+            android:text="@string/customHomePage"/>
+    </LinearLayout>
+    <ListView android:id="@+id/alter_homepage_item"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

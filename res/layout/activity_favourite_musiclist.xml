@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg07007"
+    tools:context=".MainActivity" >
+
+    <LinearLayout style="@style/title_layout">
+        <ImageButton android:id="@+id/myfavourite2homepage"
+            style="@style/title_layout_imgbtn"/>
+        <TextView style="@style/title_layout_txtview"
+            android:layout_weight="1"
+            android:text="@string/myFavourite"/>
+        <ImageButton android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tab_search_selector"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="vertical">
+        <include layout="@layout/musiclist"/>
+    </LinearLayout>
+
+    <include layout="@layout/bottom_music_play"/>   
+</LinearLayout>

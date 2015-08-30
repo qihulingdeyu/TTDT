@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout style="@style/title_layout"
+        android:background="@drawable/titlebar_background">
+        <ImageButton android:id="@+id/attentionfriends2homepage"
+            style="@style/title_layout_imgbtn"/>
+        <TextView style="@style/title_layout_txtview"
+            android:layout_weight="1"
+            android:text="@string/attentionfriends"/>
+        <ImageButton android:id="@+id/topbar_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/appwidget_icon_album"/>
+        <ImageButton android:id="@+id/topbar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_action_search"/>
+        
+    </LinearLayout>
+
+    <RadioGroup android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f8f8f8"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/attention_recommend"
+            android:checked="true"
+            style="@style/attention_friends_rg_rb"
+            android:text="@string/attention_recommend"/>
+        <RadioButton android:id="@+id/ranking"
+            style="@style/attention_friends_rg_rb"
+            android:text="@string/ranking"/>
+        <RadioButton android:id="@+id/category"
+            style="@style/attention_friends_rg_rb"
+            android:text="@string/category"/>
+    </RadioGroup>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView android:id="@+id/friend_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent">
+        </ListView>
+        
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:background="#c0000000">
+            <Button android:id="@+id/user_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:background="@drawable/scan_finish_btn_bg_normal"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/login"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

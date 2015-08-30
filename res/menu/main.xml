@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/homepageMenu">
+        <item android:id="@+id/exit"
+            android:title="@string/exit"
+            android:icon="@drawable/menu_exit"></item>
+        <item android:id="@+id/accountManager"
+            android:title="@string/accountManager"
+            android:icon="@drawable/switchuser"></item>
+        <item android:id="@+id/setting"
+            android:title="@string/setting"
+            android:icon="@drawable/setting"></item>
+        <item android:id="@+id/officialweibo"
+            android:title="@string/officialweibo"
+            android:icon="@drawable/officialweibo"></item>
+        <item android:id="@+id/nightMode"
+            android:title="@string/nightMode"
+            android:icon="@drawable/night_mode"></item>
+        <item android:id="@+id/about"
+            android:title="@string/about"></item>
+        <item android:id="@+id/suggestionFeedback"
+            android:title="@string/suggestionFeedback"></item>
+        
+    </group>
+
+</menu>

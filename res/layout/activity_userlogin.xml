@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout style="@style/title_layout"
+        android:background="@drawable/titlebar_background">
+        <ImageButton android:id="@+id/userlogin2homepage"
+            style="@style/title_layout_imgbtn"/>
+        <TextView style="@style/title_layout_txtview"
+            android:text="@string/welcomeLogin"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:background="@drawable/login_background" >
+
+        <TextView android:id="@+id/login_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login_tip"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+        <EditText android:id="@+id/email_inp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/login_tip"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/email_inp_tip"
+            android:inputType="textEmailAddress"/>
+        
+        <EditText android:id="@+id/password_inp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/email_inp"
+            android:layout_alignLeft="@id/email_inp"
+            android:layout_alignRight="@id/email_inp"
+            android:hint="@string/psw_inp_tip"
+            android:inputType="textPassword"/>
+        
+        <Button android:id="@+id/register"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/password_inp"
+            android:layout_alignLeft="@id/password_inp"
+            android:text="@string/register"
+            android:background="@drawable/btn_login_normal"/>
+        <Button android:id="@+id/login"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/password_inp"
+            android:layout_alignRight="@id/password_inp"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:background="@drawable/img_download_show_btn_normal"/>
+        
+        <TextView android:id="@+id/forget_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/login"
+            android:layout_alignLeft="@id/login"
+            android:text="@string/forget_psw"
+            android:textSize="14sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/login_account_list_background">
+        <TextView android:id="@+id/login_list_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/login_account_list"
+            android:textColor="#3e9acf"
+            android:textSize="20sp"/>
+        
+        <Button android:id="@+id/qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_list_tip"
+            android:layout_toLeftOf="@+id/sina_login"
+            android:layout_marginRight="30dp"
+            android:background="@color/transparent"
+            android:text="@string/qq_login"
+            android:drawableTop="@drawable/qq_icon"/>
+        
+        
+        <Button android:id="@+id/sina_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/login_list_tip"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="@string/sina_login"
+            android:drawableTop="@drawable/sina_icon"/>
+
+    </RelativeLayout>
+</LinearLayout>

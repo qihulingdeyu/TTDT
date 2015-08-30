@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="homepageitem_icon">
+        <item>@drawable/icon_subscription_folder</item>
+        <item>@drawable/icon_subscription_artist</item>
+        <item>@drawable/icon_subscription_album</item>
+        <item>@drawable/icon_subscription_genre</item>
+        <item>@drawable/icon_subscription_recent_add</item>
+        <item>@drawable/icon_subscription_play</item>
+        <item>@drawable/icon_subscription_new_playlist</item>
+    </integer-array>
+    <string-array name="homepageitem_text">
+        <item>@string/folder</item>
+        <item>@string/singer</item>
+        <item>@string/special</item>
+        <item>@string/style</item>
+        <item>@string/recentAdd</item>
+        <item>@string/recentPlay</item>
+        <item>@string/createNewList</item>
+    </string-array>
+    <string-array name="homepageitem_chbox">
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+    </string-array>
+</resources>

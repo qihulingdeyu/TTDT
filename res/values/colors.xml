@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent3">#30000000</color>
+    <color name="tab_top_bg">#5f5f5f</color>
+    <color name="tab_textcolor">#985a02</color>
+    <color name="icon_pressed_bg">#63abc8</color>
+    <color name="dialogDividerBg">#00bfff</color>
+    <color name="dialogBtnBg">#484848</color>
+</resources>
