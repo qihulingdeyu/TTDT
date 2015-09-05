@@ -12,6 +12,9 @@ import android.util.Log;
 
 import com.qing.ttdt.domain.MusicInfo;
 
+/**
+ * 播放的后台服务
+ */
 public class MusicPlayService extends Service {
     
     private final String TAG = "MusicPlayService";
